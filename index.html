@@ -12,7 +12,7 @@
     <header>
         <h1>Todo List</h1>
     </header>
-    <form>
+    <form class="form-todos">
         <input type="text" class="todo-input">
         <button class="todo-button" type="submit">
             <i class="fas fa-plus-square"></i>
@@ -25,8 +25,14 @@
             </select>
         </div>       
     </form>
+    <form class="form-search">
+        <input type="text" class="todo-search">
+        <button class="search-button" type="submit">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
     <div class="todo-container">
-        <ul class="todo-list"></ul>
+        <ul class="todo-list"></ul>         
     </div>
     
     <script src="app.js"></script>
