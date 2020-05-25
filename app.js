@@ -51,6 +51,7 @@ function removeTodo(event) {
     const item = event.target;
     const todo = item.parentElement;
     todo.classList.add('fall');
+    removeLocalStorageTodos(todo);
     todo.addEventListener('transitionend', function(){
         todo.remove();
     });   
@@ -155,9 +156,11 @@ function removeLocalStorageTodos(todo){
         todos = [];
     } else {
         todos = JSON.parse(localStorage.getItem('todos'));
-    }
-    
-}
+    }    
+    const todoIndex = todo.children[0].innerText;
+    todos.splice(todos.indexOf(todoIndex), 1);
+    localStorage.setItem('todos', JSON.stringify(todos));
+};
    
 
 
