@@ -112,3 +112,29 @@ form button:hover {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
 }
+
+.select {
+    margin: 1rem;
+    text-align: center;
+}
+
+select{
+    color: rgba(59,95,167,1);
+    border: none;
+    background: white;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.filter-todo {
+    text-align: center;
+    font-size: 1rem;
+}
+
+select:hover {
+    color: white;
+    background: rgba(59,95,167,1);
+}
