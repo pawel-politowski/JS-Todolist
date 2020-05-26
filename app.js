@@ -88,6 +88,8 @@ function filterTodo(event) {
     });
 };
 
+
+//function that searches todo from list
 function searchTask(event){
     event.preventDefault();
     searchTxt = searchInput.value.toLowerCase();
@@ -100,6 +102,7 @@ function searchTask(event){
 }}
 )}
 
+//removing class found(needed for searching todos)
 function removeClassFound (){
     if (searchInput.value = ""){
         li.classList.remove('found')
@@ -108,6 +111,8 @@ function removeClassFound (){
 
 removeClassFound();
 
+
+// save to local storage
 function saveToLocalStorage(todo) {
     let todos;
     if (localStorage.getItem('todos') === null) {
@@ -119,6 +124,8 @@ function saveToLocalStorage(todo) {
     localStorage.setItem('todos', JSON.stringify(todos));
 };
 
+
+//get Todos from local storage
 function getTodos() {
     let todos;
     if (localStorage.getItem('todos') === null) {
