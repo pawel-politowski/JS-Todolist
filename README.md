@@ -1,2 +1,2 @@
 # JS-Todolist
-Simple To Do List with javascript.
+Simple ToDo List with javascript.
